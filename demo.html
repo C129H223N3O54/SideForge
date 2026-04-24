@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sideforge Design System — Demo</title>
+<link rel="icon" type="image/svg+xml" href="../sideforge-logo.svg">
+<link rel="stylesheet" href="sideforge-tokens.css">
+<style>
+  .page { max-width: 960px; margin: 0 auto; padding: 40px 24px; }
+  .toolbar {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: 32px; padding-bottom: 20px;
+    border-bottom: var(--sf-border-thin) solid var(--sf-border);
+  }
+  .section { margin-bottom: 48px; }
+  .section h2 {
+    font-size: var(--sf-text-lg);
+    font-weight: var(--sf-weight-medium);
+    margin: 0 0 16px;
+    color: var(--sf-text);
+  }
+  .section h1 {
+    font-size: var(--sf-text-2xl);
+    font-weight: var(--sf-weight-medium);
+    margin: 0 0 8px;
+    letter-spacing: -0.5px;
+  }
+  .section h1 em { font-style: normal; color: var(--sf-accent); }
+  .subtitle {
+    font-family: var(--sf-font-serif);
+    font-style: italic;
+    color: var(--sf-text-muted);
+    font-size: var(--sf-text-md);
+  }
+  .row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }
+  .label {
+    font-size: var(--sf-text-xs);
+    color: var(--sf-text-muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: var(--sf-weight-medium);
+  }
+  code {
+    font-family: var(--sf-font-mono);
+    font-size: var(--sf-text-sm);
+    background: var(--sf-surface-alt);
+    padding: 2px 6px;
+    border-radius: var(--sf-radius-sm);
+    color: var(--sf-text);
+  }
+  .theme-toggle {
+    display: inline-flex; background: var(--sf-surface-alt);
+    border-radius: var(--sf-radius-pill); padding: 3px;
+    border: var(--sf-border-thin) solid var(--sf-border);
+  }
+  .theme-toggle button {
+    background: transparent; border: none; cursor: pointer;
+    padding: 6px 14px; border-radius: var(--sf-radius-pill);
+    font-size: var(--sf-text-sm); font-weight: var(--sf-weight-medium);
+    color: var(--sf-text-muted); font-family: inherit;
+  }
+  .theme-toggle button.active {
+    background: var(--sf-accent); color: var(--sf-text-inverse);
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <div class="toolbar">
+    <div class="sf-brand">
+      <span class="sf-logo sf-logo-lg"></span>
+      <div>
+        <div style="font-size: var(--sf-text-xl); font-weight: var(--sf-weight-medium);">Side<em style="font-style: normal; color: var(--sf-accent);">forge</em></div>
+        <div class="subtitle" style="font-size: var(--sf-text-sm);">— tools, crafted on the side</div>
+      </div>
+    </div>
+    <div class="theme-toggle">
+      <button data-theme="light" class="active">Light</button>
+      <button data-theme="dark">Dark</button>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="label">Logo — Skalierung</div>
+    <div class="row" style="gap: 16px;">
+      <span class="sf-logo sf-logo-xl"></span>
+      <span class="sf-logo sf-logo-lg"></span>
+      <span class="sf-logo"></span>
+      <span class="sf-logo sf-logo-sm"></span>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="label">Buttons</div>
+    <div class="row">
+      <button class="sf-btn sf-btn-primary">Speichern</button>
+      <button class="sf-btn sf-btn-secondary">Abbrechen</button>
+      <button class="sf-btn sf-btn-ghost">Importieren</button>
+      <button class="sf-btn sf-btn-danger">Löschen</button>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="label">Badges</div>
+    <div class="row">
+      <span class="sf-badge sf-badge-accent">Aktiv</span>
+      <span class="sf-badge sf-badge-success">Abgeschlossen</span>
+      <span class="sf-badge sf-badge-warning">In Bearbeitung</span>
+      <span class="sf-badge sf-badge-danger">Fehler</span>
+      <span class="sf-badge sf-badge-neutral">Inaktiv</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="label">Formularelemente</div>
+    <div class="grid-2" style="max-width: 560px;">
+      <input class="sf-input" type="text" placeholder="Suchen…">
+      <select class="sf-select">
+        <option>Alle Tools</option>
+        <option>DiskLens</option>
+        <option>NetworkLens</option>
+        <option>Music Shuffle</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="label">Metriken</div>
+    <div class="grid-3">
+      <div class="sf-stat sf-stat-accent">
+        <div class="sf-stat-value">12.4 GB</div>
+        <div class="sf-stat-label">Analysiert</div>
+      </div>
+      <div class="sf-stat sf-stat-success">
+        <div class="sf-stat-value">847</div>
+        <div class="sf-stat-label">Ordner</div>
+      </div>
+      <div class="sf-stat">
+        <div class="sf-stat-value">3.2s</div>
+        <div class="sf-stat-label">Dauer</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="label">Cards</div>
+    <div class="grid-2">
+      <div class="sf-card">
+        <h2 style="margin: 0 0 6px; font-size: var(--sf-text-md); font-weight: var(--sf-weight-medium);">NetworkLens</h2>
+        <div class="sf-text-muted" style="font-size: var(--sf-text-sm); margin-bottom: 12px;">v1.1.0 · Netzwerk-Scanner</div>
+        <p style="margin: 0; font-size: var(--sf-text-base); color: var(--sf-text-muted); line-height: var(--sf-leading-loose);">Scannt lokale Netzwerke, zeigt offene Ports und erstellt HTML/CSV-Reports.</p>
+      </div>
+      <div class="sf-card sf-card-accent">
+        <h2 style="margin: 0 0 6px; font-size: var(--sf-text-md); font-weight: var(--sf-weight-medium);">DiskLens</h2>
+        <div class="sf-text-muted" style="font-size: var(--sf-text-sm); margin-bottom: 12px;">v2.0 · Disk Analyzer</div>
+        <p style="margin: 0; font-size: var(--sf-text-base); color: var(--sf-text-muted); line-height: var(--sf-leading-loose);">Analysiert Ordnergrößen mit bilingualer EN/DE-Oberfläche und Dark Mode.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="label">App-Header im Einsatz</div>
+    <div style="border: var(--sf-border-thin) solid var(--sf-border); border-radius: var(--sf-radius-lg); overflow: hidden;">
+      <div class="sf-header">
+        <div class="sf-brand">
+          <span class="sf-logo sf-logo-sm"></span>
+          <span class="sf-brand-text">Side<em>forge</em></span>
+          <span class="sf-brand-sub">/ DiskLens</span>
+        </div>
+        <div class="row" style="gap: 8px;">
+          <span class="sf-badge sf-badge-success">● Online</span>
+          <button class="sf-btn sf-btn-primary" style="padding: 6px 14px; font-size: var(--sf-text-sm);">Scan starten</button>
+        </div>
+      </div>
+      <div style="padding: 20px; background: var(--sf-surface-alt); color: var(--sf-text-muted); font-size: var(--sf-text-base);">
+        Hier kommt der Tool-Inhalt …
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="label">Verwendung</div>
+    <p style="color: var(--sf-text-muted); line-height: var(--sf-leading-loose);">
+      Binde <code>sideforge-tokens.css</code> in jedes Tool ein.
+      Semantische Tokens wie <code>--sf-accent</code> oder <code>--sf-surface</code>
+      passen sich automatisch an Light/Dark Mode an.
+      Das Theme kannst du entweder der System-Einstellung folgen lassen
+      oder manuell setzen über <code>&lt;html data-theme="dark"&gt;</code>.
+    </p>
+  </div>
+
+</div>
+
+<script>
+  const buttons = document.querySelectorAll('.theme-toggle button');
+  const html = document.documentElement;
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const theme = btn.dataset.theme;
+      html.setAttribute('data-theme', theme);
+      buttons.forEach(b => b.classList.toggle('active', b === btn));
+    });
+  });
+</script>
+
+</body>
+</html>

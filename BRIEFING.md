@@ -11,7 +11,7 @@
 Ich möchte [TOOLNAME] auf das Sideforge Design-System migrieren.
 
 Sideforge ist mein persönliches Dev-Tool-Label. Die zentrale Repo liegt hier:
-https://github.com/kampfmade/sideforge-design
+https://github.com/C129H223N3O54/SideForge
 
 Wichtig:
 - Name: Sideforge (Tool-Header: "Sideforge / [TOOLNAME]")

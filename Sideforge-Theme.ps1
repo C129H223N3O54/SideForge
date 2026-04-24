@@ -28,7 +28,7 @@
 .NOTES
     Version: 1.0.0
     Part of the Sideforge Design System
-    https://github.com/kampfmade/sideforge-design
+    https://github.com/C129H223N3O54/SideForge
 #>
 
 # ============================================================================

@@ -140,7 +140,7 @@ Not optional. Every token has both a Light and a Dark value. In the web version,
 When you want help migrating a tool to Sideforge, paste this at the top of a new chat:
 
 > I want to migrate [ToolName] to the Sideforge design system. See
-> https://github.com/kampfmade/sideforge-design for the palette, logo, and tokens.
+> https://github.com/C129H223N3O54/SideForge for the palette, logo, and tokens.
 > For web tools use `web/sideforge-tokens.css`; for PowerShell/WPF tools use
 > `wpf/Sideforge-Theme.ps1`. Keep the tool's own functionality untouched —
 > only the visual layer changes. Light and Dark mode must both work.
@@ -148,8 +148,8 @@ When you want help migrating a tool to Sideforge, paste this at the top of a new
 You can also link the raw files directly so Claude can fetch them:
 
 ```
-https://raw.githubusercontent.com/kampfmade/sideforge-design/main/web/sideforge-tokens.css
-https://raw.githubusercontent.com/kampfmade/sideforge-design/main/wpf/Sideforge-Theme.ps1
+https://raw.githubusercontent.com/C129H223N3O54/SideForge/main/web/sideforge-tokens.css
+https://raw.githubusercontent.com/C129H223N3O54/SideForge/main/wpf/Sideforge-Theme.ps1
 ```
 
 A fuller briefing template lives in [`docs/BRIEFING.md`](docs/BRIEFING.md).

@@ -38,6 +38,11 @@
 $script:SideforgeThemes = @{
 
     Dark = @{
+        # --- Typography ---
+        FontFamily      = "Verdana"
+        FontFamilyMono  = "Consolas"
+        FontFamilySerif = "Georgia"
+
         # --- Surfaces (warm anthracite, no blue tint) ---
         WinBg           = "#0F0F0F"
         PanelBg         = "#1A1A1A"
@@ -111,6 +116,11 @@ $script:SideforgeThemes = @{
     }
 
     Light = @{
+        # --- Typography ---
+        FontFamily      = "Verdana"
+        FontFamilyMono  = "Consolas"
+        FontFamilySerif = "Georgia"
+
         # --- Surfaces (warm off-white, anvil neutrals) ---
         WinBg           = "#FAFAF7"
         PanelBg         = "#FFFFFF"

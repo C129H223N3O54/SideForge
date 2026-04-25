@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.1] — 2026-04-25
+
+### Changed
+- **Typography** — `--sf-font-sans` (web) and `FontFamily` (WPF) now use Verdana as the primary brand font with a universal fallback stack (Geneva, DejaVu Sans, Tahoma, sans-serif). Verdana is preinstalled on Windows, macOS, and Linux distros that ship MS core fonts, so all Sideforge tools render with a consistent UI font without requiring a webfont download.
+
+---
+
 ## [1.0.0] — 2026-04-24
 
 Initial release.

@@ -20,6 +20,7 @@ Wichtig:
 - Primärfarbe: Ember-Orange #E8600A (Light) / #F07E2D (Dark)
 - Sekundärfarbe: Moss-Grün #639922
 - Neutrals: Anvil (warme Grautöne, kein kühles Blaugrau)
+- Schrift: Verdana (überall vorinstalliert, keine Webfont-Downloads)
 - Light + Dark Mode sind Pflicht
 
 Die Design-Tokens und Helper findest du im Repo:

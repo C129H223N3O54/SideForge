@@ -62,8 +62,8 @@
   /* ------------------------------------------------------------------------
      2. Typography
      ------------------------------------------------------------------------ */
-  --sf-font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                  Roboto, Helvetica, Arial, sans-serif;
+  --sf-font-sans: Verdana, Geneva, "DejaVu Sans",
+                  Tahoma, sans-serif;
   --sf-font-mono: "SF Mono", Menlo, Monaco, Consolas,
                   "Courier New", monospace;
   --sf-font-serif: Georgia, "Times New Roman", serif;

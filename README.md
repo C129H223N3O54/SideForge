@@ -33,7 +33,9 @@ sideforge-design/
 │   └── Sideforge-Theme.ps1      # Theme palette + XAML helpers for PS/WPF
 ├── docs/
 │   ├── BRIEFING.md              # Copy-paste briefing for new Claude chats
-│   └── COLORS.md                # Full color reference
+│   ├── COLORS.md                # Full color reference
+│   ├── MIGRATION_PROMPTS.md     # Ready-to-use prompts for tool migration
+│   └── TYPOGRAPHY.md            # Font reference and rules
 ├── CHANGELOG.md
 ├── LICENSE
 └── README.md                    # this file
@@ -124,6 +126,9 @@ A small black tile (`#1A1A1A`) with **S** in Ember orange and **F** in white, se
 
 Only two color ramps carry meaning. Everything else is neutral. The warm grayscale (Anvil) sets Sideforge apart from the cool blue-gray default of most apps — it complements the orange instead of fighting it.
 
+### Typography
+**Verdana** for UI, **Georgia** italic bold for the SF logo, system mono for code. All system-installed — no webfont downloads. See [`docs/TYPOGRAPHY.md`](docs/TYPOGRAPHY.md) for the full reference.
+
 ### Dark mode
 Not optional. Every token has both a Light and a Dark value. In the web version, `prefers-color-scheme` handles this automatically; a manual override via `<html data-theme="dark">` is supported. In WPF, the theme is picked once at load (with `Get-SideforgeSystemTheme` or from the tool's own config) and applied via XAML interpolation.
 
@@ -152,7 +157,7 @@ https://raw.githubusercontent.com/C129H223N3O54/SideForge/main/web/sideforge-tok
 https://raw.githubusercontent.com/C129H223N3O54/SideForge/main/wpf/Sideforge-Theme.ps1
 ```
 
-A fuller briefing template lives in [`docs/BRIEFING.md`](docs/BRIEFING.md).
+A fuller briefing template lives in [`docs/BRIEFING.md`](docs/BRIEFING.md), and ready-to-use migration prompts (for first-time migration or version updates) are in [`docs/MIGRATION_PROMPTS.md`](docs/MIGRATION_PROMPTS.md).
 
 ---
 
